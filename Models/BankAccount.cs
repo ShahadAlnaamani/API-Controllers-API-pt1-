@@ -21,5 +21,8 @@ namespace ServicesLab1.Models
         [ForeignKey(nameof(Owner))]
         public int UserId { get; set; }
         public virtual User Owner { get; set; }
+
+        public virtual ICollection<Transaction> Transactions { get; set; }
+
     }
 }

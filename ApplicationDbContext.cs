@@ -17,6 +17,8 @@ namespace ServicesLab1
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<BankAccount> BankAccounts { get; set; }    
+        public DbSet<BankAccount> BankAccounts { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+
     }
 }
